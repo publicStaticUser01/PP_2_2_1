@@ -9,4 +9,4 @@
 /.idea/
 /.idea/spring-hibernate.iml/
 /.idea/spring_hibernate.iml/
-/target/
+/target/classes/
