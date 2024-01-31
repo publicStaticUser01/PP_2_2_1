@@ -32,6 +32,13 @@ public class User {
    @JoinColumn(name = "car_id", referencedColumnName = "id")
    private Car car;
 
+   public User(String firstName, String lastName, String email, Car car) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.email = email;
+      this.car = car;
+   }
+
    @Override
    public boolean equals(Object o) {
       if (this == o) return true;
@@ -45,10 +52,4 @@ public class User {
       return Objects.hash(id, firstName, lastName, email, car);
    }
 
-   public User(String firstName, String lastName, String email, Car car) {
-      this.firstName = firstName;
-      this.lastName = lastName;
-      this.email = email;
-      this.car = car;
-   }
 }

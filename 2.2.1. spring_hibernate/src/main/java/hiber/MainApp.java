@@ -33,7 +33,7 @@ public class MainApp {
          System.out.println();
       }
 
-      System.out.println(userService.getUsersByCarModelAndSeries("audi", 3));
+      System.out.println(userService.getUsersByCarModelAndSeries("bmw", 2));
 
       context.close();
    }
